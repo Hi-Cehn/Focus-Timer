@@ -1,16 +1,12 @@
+import keyboard
 import time
 
-import keyboard
-
-while True:
+def start_hotkey_press():
     if keyboard.is_pressed("+"):
-
         print("Key pressed.")
 
         time.sleep(0.1)
 
+def end_hotkey_press():
     if keyboard.is_pressed("Enter"):
-        break
-
-    time.sleep(0.01)
-
+        return True
